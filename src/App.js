@@ -1,22 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import DataFromSite from "./components/DataFromSite";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <h1 className="text-white text-2xl font-serif font-bold">
+          This is sample react project Tailwind css
+        </h1>
+        <p className="text-white text-xl font-serif font-bold">
+          Click The Button To Get Random Jokes from Different categories
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <DataFromSite />
       </header>
     </div>
   );
